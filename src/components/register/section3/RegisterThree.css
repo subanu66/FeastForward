@@ -1,0 +1,64 @@
+.register-three-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0; /* Optional background color */
+    border-radius: 10px;
+    width: 80%; /* Increase the width of the container */
+    max-width: 1200px; /* Optional: set a max-width for larger screens */
+    margin: 0 auto;
+    margin-top:40px; /* Center the container horizontally */
+}
+
+.register-three-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the box shadow for more depth */
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.register-three-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-section {
+    flex: 0 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-right: 20px;
+}
+
+.content-section {
+    flex: 1;
+}
+
+.content-section h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.content-section p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.content-section button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.content-section button:hover {
+    background-color: #45a049;
+}

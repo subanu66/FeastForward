@@ -1,0 +1,69 @@
+.heading1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+.heading2{
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  color: black;
+}
+.testimonal-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.testimonal-card {
+  background-color: #F8F4E1;
+  border-radius: 15px;
+  padding: 20px;
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonal-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.volunteer-info h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #74512D;
+}
+
+.volunteer-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #AF8F6F;
+}
+
+.bottom-section {
+  font-size: 16px;
+  color: #543310;
+}

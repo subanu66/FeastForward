@@ -1,0 +1,163 @@
+.registerSection {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.containerWrapperR {
+  display: flex;
+  justify-content: space-around; /* Evenly spaces the containers */
+  align-items: center; /* Centers the containers vertically */
+  width: 80%;
+  margin: 0 auto;
+}
+
+.containerR {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Set a fixed width for uniformity */
+}
+
+.iconR img {
+  width: 100px; /* Set a consistent size for icons */
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.descriptionR p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #543310;
+}
+
+.buttonR {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonR button {
+  background-color: #AF8F6F;
+  color: #F8F4E1;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 100%; /* Ensure the button takes full width of the container */
+}
+
+.buttonR button:hover {
+  background-color: #543310;
+}
+
+.heading1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #543310;
+}
+
+.heading2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  color: #543310;
+}
+
+/* Additional CSS for other sections */
+.blog {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.blogSlider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.blogWrapper {
+  display: flex;
+  overflow: hidden;
+}
+
+.blogCards {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.blogCard {
+  flex: 1 0 100%;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+  margin: 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.blogImage {
+  flex: 1;
+  overflow: hidden;
+}
+
+.blogImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blogText {
+  flex: 1;
+  padding: 20px;
+  font-size: 25px;
+}
+
+.blogText h1 {
+  font-size: 30px;
+  color: #543310;
+}
+
+.blogText p {
+  color: grey;
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #AF8F6F;
+  color: #F8F4E1;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}

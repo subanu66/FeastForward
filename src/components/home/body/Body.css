@@ -1,0 +1,48 @@
+.hero {
+    background-image: url("../../../../public/images/bk1.jpg");
+    background-color:rgba(255, 252, 252, 0.477);
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-9;
+    width: 99.5%;
+    height: 100vh;
+    padding-top: 20%;
+    padding-right: 50px;
+    color:#F8F4E1;
+    margin-left:5px;
+    
+    /* overflow:hidden */
+  }
+  
+  .hero #heading h3 {
+    color: #fff;
+  }
+  .hero #heading {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  .row{
+    margin-top: -40px;
+    margin-left: 20px;
+  }
+  .row p{
+    color:#fdfafa;
+  }
+  @media screen and (max-width: 768px) {
+    .margin {
+      height: 40vh;
+    }
+    .hero {
+      background-position: right;
+      padding-top: 50%;
+      height: 80vh;
+    }
+    .hero .row {
+      width: 100%;
+    }
+  }
+ 

@@ -1,0 +1,103 @@
+.registerSection {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.heading1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.heading2 {
+  margin-bottom: 30px;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.containerWrapperR {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between containers */
+  padding: 0 20px;
+}
+
+.containerR {
+  flex: 1; /* Take equal space */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #FFFFFF; /* Background color for each container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  text-align: center;
+}
+
+.containerR:hover {
+  transform: scale(1.05); /* Hover effect */
+}
+
+.iconR {
+  margin-bottom: 20px;
+}
+
+.iconR img {
+  width: 60px; /* Adjust size of icon */
+  height: 60px;
+  object-fit: cover;
+}
+
+.descriptionR {
+  m4rgin-bottom: 20px;
+}
+
+.buttonR {
+  display: flex;
+  justify-content: center;
+  height:30%;
+}
+
+.buttonR button {
+  background-color: #000; /* Default button color */
+  color: #FFF; /* Default button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width:40%;
+  
+}
+
+.buttonR button:hover {
+  background-color: #333; /* Default button hover color */
+}
+
+  /*--------------faq-------------*/
+  .faq .container {
+    max-width: 70%;
+    border-radius: 5px;
+  }
+  .faq .box {
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .faq button {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+  }
+  .faq h2 {
+    font-weight: 500;
+  }
+  .faq p {
+    padding: 20px;
+  }
+  .faq .accordion:hover {
+    background-color: #1eb2a6;
+    color: #fff;
+  }
+  
+  /*--------------faq-------------*/
