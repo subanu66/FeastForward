@@ -1,5 +1,5 @@
 .newletter {
-    background-color: #543310;
+    background-color: #F8F4E1;
     padding: 50px 0;
   }
   .newletter .right,
@@ -7,8 +7,21 @@
     padding-right: 50px;
     margin-top: 10px;
   }
+  .newletter .left {
+    margin-left: 30px;
+  }
+  .newletter .left{
+    background-color: white;
+    padding: 20px;
+    margin-right: 29px;
+    border-radius: 10px;
+  }
+  .row1 p {
+    color: #AF8F6F ;
+    margin-left: 3px;
+}
   .newletter h1 {
-    color: #fff;
+    color: #543310;
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
@@ -24,15 +37,21 @@
     border: none;
     outline: none;
     height: 30px;
+    margin-right: 15px;
   }
   .newletter i {
-    padding: 12px;
-    color: #1eb2a6;
-    background-color: #fff;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    padding: 10px;
+    color: #543310;
+    height: 25px;
+    margin-right: 20px;
+    /* background-color: #fff; */
   }
+  
   footer {
     background-color: #F8F4E1;
-  }
+  } 
   footer .container {
     display: grid;
     grid-template-columns: 3fr 2fr 2fr 4fr 3fr;
@@ -44,19 +63,33 @@
     }
   }
   footer .logo span {
-    color: #1eb2a6;
-    font-size: 14px;
+    color: #543310;
+    font-size: 15px;
+    margin-left: -60px;
+  }
+  .logo h1{
+    margin-left: -70px;
   }
   footer .logo p {
     color: grey;
     margin: 30px 0 15px 0;
   }
   footer .logo .icon {
-    background-color: #1eb2a6;
+    background-color: #543310;
+    color:#F8F4E1;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  footer .logo .icon:hover {
+    background-color: #543310;
     color: white;
     margin-right: 10px;
   }
+  /* .flexSB{
+    margin-bottom: 50px;
+  } */
   footer h3 {
+    margin-left: 20px;
     margin-bottom: 40px;
     font-weight: 500;
   }
@@ -65,7 +98,7 @@
   }
   footer .link li::before {
     content: "⟶";
-    color: #1eb2a6;
+    color: #543310;
     margin-right: 5px;
   }
   footer .items {
@@ -81,7 +114,7 @@
   footer .items span,
   footer .items i {
     font-size: 12px;
-    color: #1eb2a6;
+    color: #543310;
     margin-right: 5px;
     text-transform: capitalize;
   }
@@ -96,7 +129,16 @@
   footer .last i {
     width: 60px;
     font-size: 20px;
-    color: #1eb2a6;
+    color: #543310;
+  }
+  .link{
+    margin-top: 10px;
+  }
+  .box{
+    margin-top: 10px;
+  }
+  .last{
+    margin-bottom: 1px;
   }
   .legal {
     text-align: center;
@@ -110,3 +152,7 @@
   .legal i {
     color: #1eb2a6;
   }
+  .last i{
+    margin-left: 20px;
+  }
+  

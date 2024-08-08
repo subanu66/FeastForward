@@ -1,8 +1,16 @@
 .registerSection {
   padding: 50px 0;
-  background-color: #f8f8f8;
-}
+  background-color: #F8F4E1;
+  margin-top:-40px;
+  
 
+}
+.registerSection h5{
+  font-size: 25px;
+}
+.registerSection h4{
+  font-size: 35px;
+}
 .containerWrapperR {
   display: flex;
   justify-content: space-around; /* Evenly spaces the containers */
@@ -31,8 +39,8 @@
 }
 
 .descriptionR p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 17px;
+  margin-bottom: 5px;
   color: #543310;
 }
 
@@ -43,7 +51,7 @@
 }
 
 .buttonR button {
-  background-color: #AF8F6F;
+  background-color: #543310;
   color: #F8F4E1;
   border: none;
   border-radius: 5px;
@@ -52,16 +60,18 @@
   cursor: pointer;
   transition: background-color 0.3s ease-in-out;
   width: 100%; /* Ensure the button takes full width of the container */
+  margin-bottom: 10px;
 }
 
 .buttonR button:hover {
-  background-color: #543310;
+  background-color: #F8F4E1;
+  color:#543310;
 }
 
 .heading1 {
   margin-bottom: 30px;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   color: #543310;
 }
@@ -69,7 +79,7 @@
 .heading2 {
   margin-bottom: 30px;
   text-align: center;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: bold;
   color: #543310;
 }
@@ -77,7 +87,7 @@
 /* Additional CSS for other sections */
 .blog {
   padding: 50px 0;
-  background-color: #f8f8f8;
+  background-color: #F8F4E1;
 }
 
 .container {
@@ -99,13 +109,14 @@
 .blogCards {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 100%;
+  width: 2100px;
+  margin-right: 30px;
 }
 
 .blogCard {
   flex: 1 0 100%;
   display: flex;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
   margin: 0 10px;
@@ -125,19 +136,20 @@
 }
 
 .blogText {
+  margin-top: 40px;
   flex: 1;
   padding: 20px;
   font-size: 25px;
 }
 
 .blogText h1 {
-  font-size: 30px;
+  font-size: 25px;
   color: #543310;
 }
 
 .blogText p {
-  color: grey;
-  font-size: 22px;
+  color: black;
+  font-size: 18px;
   margin: 5px 0;
 }
 
@@ -145,17 +157,18 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #AF8F6F;
-  color: #F8F4E1;
+  /* background-color: #AF8F6F; */
+  color: black;
   border: none;
   border-radius: 50%;
   padding: 10px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 4;
 }
 
 .left-arrow {
   left: 10px;
+  
 }
 
 .right-arrow {

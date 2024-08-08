@@ -7,7 +7,7 @@ const Footer = () => {
     <>
       <section className='newletter'>
         <div className='container flexSB'>
-          <div className='left row'>
+          <div className='left row1'>
             <h1>Newsletter - Stay Updated with FeastForward</h1>
             <p>Stay connected and receive the latest updates on how FeastForward is transforming community food relief. Far beyond the conventional, we’re making an impact together!</p>
           </div>
@@ -17,12 +17,13 @@ const Footer = () => {
           </div>
         </div>
       </section>
+      
       <footer>
         <div className='container padding'>
           <div className='box logo'>
             <h1>FEAST FORWARD</h1>
             <span>Transforming Surplus Into Sustenance</span>
-            <p>Team Up for Community Impact and Surplus Food Distribution.Be a Partner in Fighting Hunger and Empowering Communities!</p>
+            {/* <p>Team Up for Community Impact and Surplus Food Distribution.Be a Partner in Fighting Hunger and Empowering Communities!</p> */}
 
             <i className='fab fa-facebook-f icon'></i>
             <i className='fab fa-twitter icon'></i>
@@ -52,11 +53,11 @@ const Footer = () => {
             <h3>Recent Post</h3>
             {blog.slice(0, 3).map((val,index) => (
               <div key={index} className='items flexSB'>
-                <div className='img'>
+                {/* <div className='img'>
                   <img src={val.cover} alt='' />
-                </div>
+                </div> */}
                 <div className='text'>
-                  <span>
+                  <span>  
                     <i className='fa fa-calendar-alt'></i>
                     <label htmlFor=''>{val.date}</label>
                   </span>

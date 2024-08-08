@@ -48,9 +48,11 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         padding: '20px 20px 0', // Remove bottom padding
-        //  backgroundColor: '#fce5cd',x
-        backgroundColor: 'rgba(255, 255, 255, 0.8)',     
+         backgroundColor: '#F8F4E1',
+        // backgroundColor: 'rgba(255, 255, 255, 0.8)',     
         borderRadius: '10px',
+        width:'80%',
+        marginLeft:'10%',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
         transition: 'background-color 0.3s ease',
         cursor: 'pointer', // Change cursor to pointer on hover
@@ -64,19 +66,19 @@ const styles = {
       },
   title: {
     fontSize: '2em',
-    color: '#333', // Dark text color
+    color: 'black', // Dark text color
     marginBottom: '10px',
     transition: 'color 0.3s ease',
   },
   subtitle: {
     fontSize: '1.5em',
-    color: '#666', // Lighter text color
+    color: '#543310', // Lighter text color
     marginBottom: '15px',
     transition: 'color 0.3s ease',
   },
   description: {
     fontSize: '1em',
-    color: '#777', // Even lighter text color
+    color: '543310', // Even lighter text color
     marginBottom: '20px',
     maxWidth: '800px', // Constrain the width of the description
     marginLeft: 'auto',
@@ -90,13 +92,13 @@ const styles = {
     transform: 'scale(1.05)', // Slight zoom on hover
   },
   titleHover: {
-    color: '#111', // Darker text color on hover
+    color: 'black', // Darker text color on hover
   },
   subtitleHover: {
-    color: '#444', // Darker text color on hover
+    color: '#543310', // Darker text color on hover
   },
   descriptionHover: {
-    color: '#555', // Darker text color on hover
+    color: '#543310', // Darker text color on hover
   },
 };
 

@@ -28,8 +28,10 @@ const AllNgos = () => {
 
   return (
     <>
+    <div className="firsttitle1">
       <h2 className="firsttile">DONATION</h2>
       <h1 className="sectionTitle1">SUPPORT OUR MISSION: EVERY CONTRIBUTION COUNTS</h1>
+      
 
       <section className='online'>
         <div className='containerdo'>
@@ -64,6 +66,7 @@ const AllNgos = () => {
 
       {/* Modal Component */}
       <Donate isOpen={isModalOpen} onClose={handleCloseModal} />
+      </div>
     </>
   );
 };

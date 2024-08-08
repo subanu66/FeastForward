@@ -1,36 +1,41 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 const NgoRegistration = () => {
   return (
-    <div style={styles.container}>
-      <div style={styles.imageContainer}>
-        <img
-          src="/images/ngosec/ngoregg.jpg" // Replace with your image path
-          alt="NGO Registration"
-          style={styles.image}
-        />
-      </div>
-      <div style={styles.content}>
-        <h2 style={styles.heading}>NGO Registration</h2>
-        <p style={styles.paragraph}>
-          Register your NGO with us to be a part of a meaningful initiative that helps in reducing food wastage and supporting underserved communities. Fill out the registration form and join our network of committed partners.
-        </p>
-        <button style={styles.button}>Register Now</button>
+    <div style={styles.card}>
+      <div style={styles.container}>
+        <div style={styles.imageContainer}>
+          <img
+            src="/images/ngosec/ngoregg.jpg" // Replace with your image path
+            alt="NGO Registration"
+            style={styles.image}
+          />
+        </div>
+        <div style={styles.content}>
+          <h2 style={styles.heading}>NGO Registration</h2>
+          <p style={styles.paragraph}>
+            Register your NGO with us to be a part of a meaningful initiative that helps in reducing food wastage and supporting underserved communities. Fill out the registration form and join our network of committed partners.
+          </p>
+          <Link to="/signupngo"><button style={styles.button}>Register Now</button></Link>
+        </div>
       </div>
     </div>
   );
 };
 
 const styles = {
+  card: {
+    width: '80%',
+    margin: '40px auto',
+    padding: '20px',
+    backgroundColor: '#F8F4E1',
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  },
   container: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '20px',
-    backgroundColor: '#f8f4e1',
-    borderRadius: '8px',
-    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
-    overflow: 'hidden',
   },
   imageContainer: {
     flex: '0 0 40%',
@@ -44,7 +49,7 @@ const styles = {
     borderRadius: '8px',
   },
   content: {
-    flex: '1',
+    flex: 1,
     paddingLeft: '20px',
   },
   heading: {

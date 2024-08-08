@@ -9,7 +9,7 @@ import Faq from "./Faq"
 const Register = () => {
 
   const heading = "Register";
-  const description = "Learn more about our mission and the team behind it.";
+  const description = "Join the FeastForward community by registering as a donor or volunteer. Contribute to reducing food waste and support those in need with ease.";
   const timelineItems = [
     { title: 'How It Work'},
     { title: 'Benefits For NGOS'},

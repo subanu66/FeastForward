@@ -20,7 +20,7 @@
   .timeline-section {
     display: flex;
     padding: 2rem;
-    background: rgba(248, 244, 225, 0.8);
+    background: rgba(248, 244, 225, 0.7);
     border-radius: 10px;
     margin: 2rem 0;
     width: 80%;
@@ -32,6 +32,7 @@
   .left-sidea {
     flex: 1;
     padding: 2rem;
+    
   }
   
   .right-sidea {
@@ -40,6 +41,7 @@
     margin-left: 2rem;
     max-height: 80vh;
     overflow-y: auto;
+    margin-top: 45px;
   }
   
   .timeline {
@@ -67,12 +69,15 @@
   }
   
   .timeline-content h2 {
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-bottom: 0.5rem;
     color: #543310;
   }
   
   .left-sidea h1{
     color:#543310;
+  }
+  .left-sidea p{
+    font-size: 20px;
   }
   

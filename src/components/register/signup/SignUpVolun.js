@@ -53,7 +53,7 @@ function SignUpVolun() {
     <div style={styles.container}>
       <form onSubmit={handleSubmit} style={styles.form}>
         <fieldset style={styles.fieldset}>
-          <h2 style={styles.heading}>NGO Registration</h2>
+          <h2 style={styles.heading}>Volunteer Registration</h2>
           <div style={styles.gridContainer}>
             <div style={styles.leftSide}>
               <div style={styles.field}>
@@ -169,10 +169,11 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     height: '100vh',
+    backgroundImage: ' linear-gradient(to top, #fddb92 0%, #d1fdff 100%)',
     backgroundColor: '#f0f0f0',
   },
   form: {
-    backgroundColor: 'white',
+    backgroundColor: '#F8F4E1',
     padding: '30px', // Increased padding
     borderRadius: '15px', // Increased border-radius
     boxShadow: '0 8px 16px rgba(0, 0, 0, 0.2)', // Enhanced box shadow
@@ -227,8 +228,8 @@ const styles = {
   button: {
     width: '100%',
     padding: '12px', // Increased padding
-    backgroundColor: '#4CAF50',
-    color: 'white',
+    backgroundColor: '#543310',
+    color: '#F8F4E1',
     border: 'none',
     borderRadius: '5px',
     cursor: 'pointer',

@@ -4,10 +4,13 @@ import "./contact.css";
 
 const Contact = () => {
   const imageUrl = '/images/contact.jpg'; // Replace with your image path
-  
+  const heading = "About Us";
   return (
     <>
-      <Back backgroundImage='/images/bk1.jpg' />
+    <div className="about-pagea">
+      <Back backgroundImage='/images/bk1.jpg'
+      heading={heading} />
+      </div>
       <section className='contacts padding'>
         <div className='container shadow flexSB'>
           <div className='left row'>

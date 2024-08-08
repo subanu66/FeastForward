@@ -18,7 +18,7 @@ export const homeAbout = [
 
   export const awrapper = [
     {
-      cover: "/images/wraicons/donation.png",
+      cover: "/images/wraicons/w11.png",
       data: "3,000",
       title: "FOOD DONATIONS",
     },
@@ -29,12 +29,12 @@ export const homeAbout = [
       title: "PARTNERED NGOS",
     },
     {
-      cover: "/images/wraicons/planner (1).png",
+      cover: "/images/wraicons/w3.png",
       data: "1,000",
       title: "EVENTS",
     },
     {
-      cover: "/images/wraicons/planning.png ",
+      cover: "/images/wraicons/w4.png ",
       data: "587",
       title: "MEALS DELIVERED",
     },
@@ -333,7 +333,7 @@ export const homeAbout = [
     {
         id: 1,
         title: "Transforming Lives Through Food Donations",
-        category: "Impact Story",
+        // category: "Impact Story",
         description: "Discover how our recent initiative helped transform the lives of hundreds in underserved communities. Through strategic food donations and community support, we've made a tangible difference in combating hunger. This story highlights the personal accounts of those who received aid and the communities that rallied to support this cause.The impact of this initiative is a testament to the power of collective action and the importance of community solidarity.",
         img: "/images/blog/b01.png",
         additionalInfo: {
@@ -345,7 +345,7 @@ export const homeAbout = [
     {
         id: 2,
         title: "Volunteer Spotlight: The Heart of Our Mission",
-        category: "Volunteer Highlight",
+        // category: "Volunteer Highlight",
         description: "Meet John Doe, one of our dedicated volunteers who has gone above and beyond to support our mission. Learn about his journey and the impact he's made through his volunteer work with FeastForward. This spotlight also includes interviews with those who have worked alongside him and testimonials about his influence.",
         img: "/images/blog/b2.jpg",
         additionalInfo: {
@@ -358,7 +358,7 @@ export const homeAbout = [
     {
         id: 3,
         title: "Celebrating Success: Our Annual Food Drive",
-        category: "Event Recap",
+        // category: "Event Recap",
         description: "Join us as we recap our annual food drive event, highlighting the incredible efforts of our team and volunteers. See how we collected and distributed thousands of meals to those in need. This recap includes detailed statistics, photos from the event, and feedback from participants.",
         img: "/images/blog/b3.webp",
         additionalInfo: {
@@ -371,7 +371,7 @@ export const homeAbout = [
     {
         id: 4,
         title: "Innovative Partnerships for a Sustainable Future",
-        category: "Partnership News",
+        // category: "Partnership News",
         description: "Explore our new partnerships with local businesses and organizations. These collaborations are essential in helping us achieve our sustainability goals and expanding our reach in the fight against food waste. This post delves into how these partnerships were formed and their projected impact on our mission.",
         img: "/images/blog/b4.avif",
         additionalInfo: {

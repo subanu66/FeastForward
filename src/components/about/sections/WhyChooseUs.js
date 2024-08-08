@@ -1,62 +1,28 @@
 import React from 'react';
+import './CardStyles.css'; // Assuming the above styles are saved in this file
 
 const WhyChooseUs = () => {
   return (
-    <div style={styles.container}>
-      <div style={styles.leftSide}>
+    <div className="card">
+      <div className="card-image">
         <img
           src="/images/absec/whyus.jpg"
           alt="Why Choose Us"
-          style={styles.image}
         />
       </div>
-      <div style={styles.rightSide}>
-        <h2 style={styles.heading}>Why Food Bridge?</h2>
-        <p style={styles.text}>
-          Food Bridge offers a unique approach to food redistribution compared to traditional systems. 
-          Unlike conventional methods, which can be fragmented and inefficient, Food Bridge integrates real-time tracking 
-          and a unified platform that connects all stakeholders including donors, volunteers, and NGOs. This ensures 
-          that surplus food is efficiently tracked and managed from donation to distribution.
-        </p>
-        <p style={styles.text}>
-          Our platform addresses common inefficiencies by providing a streamlined process that enhances the impact of 
-          food distribution. With features like the real-time tracking system and a rewards program for participants, 
-          Food Bridge not only optimizes food distribution but also motivates more people to get involved and make a difference.
-        </p>
+      <div className="card-content">
+        <h2>Why FeastForward?</h2>
+        <p>Food Bridge stands out from traditional food redistribution systems in several key ways:</p>
+        <ul>
+          <li>Real-Time Tracking: Our platform offers real-time tracking of food donations, ensuring transparency and efficiency in the redistribution process.</li>
+          <li>Integrated Platform: We provide a unified system that connects donors, volunteers, and NGOs, streamlining the food donation process.</li>
+          <li>User-Friendly Interface: Our platform is designed to be intuitive and easy to use, making it simple for users to participate and manage their activities.</li>
+          <li>Comprehensive Support: We offer robust support to our partners and users, including training, resources, and dedicated customer service.</li>
+        </ul>
+        <p>By choosing Food Bridge, you join a community dedicated to making a positive impact on food security and sustainability.</p>
       </div>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    display: 'flex',
-    padding: '20px',
-    margin: '20px 0',
-  },
-  leftSide: {
-    flex: '0.4',
-    paddingRight: '20px',
-  },
-  image: {
-    width: '100%',
-    borderRadius: '10px',
-  },
-  rightSide: {
-    flex: '0.6',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-  },
-  heading: {
-    fontSize: '24px',
-    marginBottom: '10px',
-  },
-  text: {
-    fontSize: '16px',
-    lineHeight: '1.5',
-    marginBottom: '20px',
-  },
 };
 
 export default WhyChooseUs;

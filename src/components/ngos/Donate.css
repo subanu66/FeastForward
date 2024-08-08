@@ -13,7 +13,8 @@
   }
   
   .modal-content {
-    background: white;
+    /* background: white; */
+    background-image:  linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
     border-radius: 10px;
     padding: 20px;
     width: 90%;

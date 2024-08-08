@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './AdminPage.css';
+import { Link } from "react-router-dom";
+
 
 const AdminPage = () => {
   const [passwordShown, setPasswordShown] = useState(false);
@@ -34,8 +36,8 @@ const AdminPage = () => {
             </label>
             <a href="/forgot-password">Forgot Password?</a>
           </div>
-          <button className="signin-button">Sign In</button>
-        </div>
+          <Link to="/adminside"><button className="signin-button">Sign In</button></Link>
+        </div>  
         <div className="admin-right">
           <img src="/images/sign/userlg1.jpeg" alt="Admin" />
         </div>

@@ -9,15 +9,19 @@
   
 }
 .rightrow p{
-  color:brown
+  color:#543310;
 }
 .contacts h1 {
   font-size: 30px;
   font-weight: 400;
+  margin-left: 30px;
   
 }
 .contacts p {
-  color:brown;
+  color:#543310;
+}
+.row p{
+  color:#543310;
 }
 .contacts .items {
   margin: 30px 0;
@@ -25,7 +29,7 @@
 .contacts .box p {
   font-size: 17px;
   margin-top: 10px;
-  color: brown;
+  color:#543310;
 }
 .contacts textarea,
 .contacts input {
@@ -33,7 +37,7 @@
   padding: 15px;
   margin-bottom: 15px;
   outline: none;
-  border: 1px solid grey;
+  border: 1px solid #543310;
 }
 form .flexSB input:nth-child(1) {
   margin-right: 10px;
@@ -45,7 +49,7 @@ form .flexSB input:nth-child(1) {
   color:brown;
 }
 .contacts span {
-  color: #1eb2a6;
+  color: #543310;
   font-weight: 600;
   font-size: 15px;
   word-spacing: 5px;
@@ -53,10 +57,18 @@ form .flexSB input:nth-child(1) {
 
 /* New styles for the image */
 .contact-image {
-  margin-top: 70px; /* Adjust the value as needed */
+  margin-top:100px;
+  margin-bottom: -90px; /* Adjust the value as needed */
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+.primary-btn{
+  background-color: #543310;
+  color: white;
+}
+.row h3{
+  color:black;
 }
 
 @media screen and (max-width: 768px) {

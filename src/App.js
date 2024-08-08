@@ -19,10 +19,13 @@ import SignUpNgo from "./components/register/signup/SignUpNgo"
 import SignUpDonor from "./components/register/signup/SignUpDonor"
 import Body from "./components/home/body/Body"
 import Hregister from "./components/home/Hregister"
+import Welcome from "./components/Welcome"
+import AdminSide from "./components/AdminSide"
+
 function App() {
   return (
     <Router>
-      {/* Only render Header and Footer on non-login pages */}
+      
       <Routes>
         <Route path="/login" element={<LoginPage />} />
         <Route exact path='/admin' element={<AdminPage />} />
@@ -30,6 +33,8 @@ function App() {
         <Route path="/signupngo" element={<SignUpNgo />} />
         <Route path="/signupdonor" element={<SignUpDonor />} />
         <Route exact path='/register1' element={<Hregister />} />
+        <Route exact path='/adminside' element={<AdminSide />} />
+        
 
         <Route path="*" element={
             <>
@@ -43,8 +48,9 @@ function App() {
                 <Route exact path='/contact' element={<Contact />} />
                 <Route exact path='/work' element={<Work />} />
                 <Route exact path='/body' element={<Body />} />
+                <Route exact path='/welcome' element={<Welcome/>} />
                 <Route exact path='/back' element={<Back title="About Us" />} />
-
+                
               </Routes>
               <Footer />
             </>

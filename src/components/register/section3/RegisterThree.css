@@ -14,7 +14,7 @@
 .register-three-card {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: #F8F4E1;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase the box shadow for more depth */
     padding: 20px;
@@ -23,6 +23,7 @@
 
 .register-three-card:hover {
     transform: translateY(-5px);
+    background-color: white;
 }
 
 .icon-section {
@@ -41,18 +42,18 @@
 .content-section h3 {
     margin: 0;
     font-size: 1.5rem;
-    color: #333;
+    color:black;
 }
 
 .content-section p {
     margin: 10px 0;
-    color: #666;
+    color: #543310;
 }
 
 .content-section button {
     padding: 10px 20px;
-    background-color: #4caf50;
-    color: white;
+    background-color: #543310;
+    color: #F8F4E1;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -60,5 +61,6 @@
 }
 
 .content-section button:hover {
-    background-color: #45a049;
+    background-color: white;
+    color:#543310
 }

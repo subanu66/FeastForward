@@ -40,7 +40,7 @@ const styles = {
     container: {
         textAlign: 'center',
         padding: '40px 20px',
-        backgroundColor: '#f9f9f9',
+        backgroundColor: 'white',
         borderRadius: '10px',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
         maxWidth: '900px',
@@ -53,7 +53,7 @@ const styles = {
     },
     description: {
         fontSize: '1.2em',
-        color: '#666',
+        color: '#543310',
         marginBottom: '40px',
     },
     optionsContainer: {
@@ -63,7 +63,7 @@ const styles = {
         gap: '20px',
     },
     optionCard: {
-        backgroundColor: '#fff',
+        backgroundColor: '#F8F4E1',
         padding: '20px',
         borderRadius: '8px',
         boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
@@ -80,11 +80,12 @@ const styles = {
     },
     optionDescription: {
         fontSize: '1em',
-        color: '#666',
+        color: '#543310',
     },
     optionCardHover: {
         transform: 'scale(1.05)',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+        backgroundColor:'white'
     },
 };
 

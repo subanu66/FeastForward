@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react"
 import { faq } from "../../dummydata"
 import Heading from "../common/heading/Heading"
 
+
 const Faq = () => {
   const [click, setClick] = useState(false)
 
@@ -14,7 +15,7 @@ const Faq = () => {
 
   return (
     <>
-      <Heading subtitle='FAQS' title='Frequesntly Ask Question' />
+      <Heading title='Frequesntly Ask Question' />
       <section className='faq'>
         <div className='container'>
           {faq.map((val, index) => (

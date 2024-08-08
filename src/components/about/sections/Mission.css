@@ -1,33 +1,23 @@
-.section-container {
-    display: flex;
-    padding: 20px;
-    margin: 20px 0;
-  }
-  
-  .section-left {
-    flex: 0.4;
-    padding-right: 20px;
-  }
-  
-  .section-left img {
-    width: 100%;
-    border-radius: 10px;
-  }
-  
-  .section-right {
-    flex: 0.6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .section-right h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .section-right p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
+import React from 'react';
+import './CardStyles.css'; // Assuming the above styles are saved in this file
+
+const Mission = () => {
+  return (
+    <div className="card">
+      <div className="card-image">
+        <img
+          src="/images/absec/mission.jpg"
+          alt="Mission"
+        />
+      </div>
+      <div className="card-content">
+        <h2>Our Mission</h2>
+        <p>Our mission at Food Bridge is to reduce food wastage and connect surplus food with those in need.
+          We are dedicated to enhancing food security and promoting sustainability through efficient redistribution of excess food.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default Mission;

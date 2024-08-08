@@ -1,14 +1,17 @@
+.padding{
+background-color:#F8F4E1;
+}
 .heading1 {
   margin-bottom: 30px;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   color: black;
 }
 .heading2{
   margin-bottom: 30px;
   text-align: center;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: bold;
   color: black;
 }
@@ -19,7 +22,7 @@
 }
 
 .testimonal-card {
-  background-color: #F8F4E1;
+  background-color: white;
   border-radius: 15px;
   padding: 20px;
   width: 30%;

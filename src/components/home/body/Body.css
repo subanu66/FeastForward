@@ -27,10 +27,15 @@
   }
   .row{
     margin-top: -40px;
-    margin-left: 20px;
+    /* margin-left: -20px; */
+    width:60%;
+  }
+  .row h1{
+    margin-left: -27.5px;
   }
   .row p{
     color:#fdfafa;
+    margin-left: -9px;
   }
   @media screen and (max-width: 768px) {
     .margin {

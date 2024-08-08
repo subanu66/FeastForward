@@ -11,7 +11,7 @@ import "./about.css"; // Assuming you have a CSS file for styling
 
 const About = () => {
   const heading = "About Us";
-  const description = "Learn more about our mission and the team behind it.";
+  const description = "At FeastForward, we transform surplus food into sustenance. Our platform connects excess food from event organizers and individuals with those in need through NGOs and volunteers, tackling food waste efficiently.";
   const timelineItems = [
     { title: 'Mission' },
     { title: 'How It Works'},
@@ -41,4 +41,4 @@ const About = () => {
   );
 }
 
-export default About;
+export default About; 

@@ -5,9 +5,9 @@ const PartneredNGOs = () => {
 
   // Sample data for NGOs
   const ngoData = [
-    { name: 'Akshaya Patra Foundation', description: 'Description of NGO 1', image: '/images/ngosec/aksh1.avif' },
-    { name: 'Feeding India Foundation', description: 'Description of NGO 2', image: '/images/ngosec/feedindia.jpeg' },
-    { name: 'Annamrita Foundation', description: 'Description of NGO 3', image: '/images/ngosec/annam.jpeg' }
+    { name: 'Akshaya Patra Foundation', description: 'Nourishing young minds with every meal.', image: '/images/ngosec/aksh1.avif' },
+    { name: 'Feeding India Foundation', description: 'Filling plates, fulfilling hearts.', image: '/images/ngosec/feedindia.jpeg' },
+    { name: 'Annamrita Foundation', description: 'Feeding futures, one meal at a time.', image: '/images/ngosec/annam.jpeg' }
   ];
 
   useEffect(() => {
@@ -18,48 +18,55 @@ const PartneredNGOs = () => {
   }, [ngoData.length]);
 
   return (
-    <div style={styles.mainContainer}>
-      <div style={styles.leftContainer}>
-        <div style={styles.headingContainer}>
-          <h2 style={styles.heading}>Partnered NGOs</h2>
-          <p style={styles.description}>
-            We collaborate with several NGOs to ensure that surplus food reaches those who need it most. Our partners are crucial in the mission to reduce food wastage and help underserved communities.
-          </p>
-        </div>
-      </div>
-      <div style={styles.slideshowContainer}>
-        {ngoData.map((ngo, index) => (
-          <div
-            key={index}
-            style={{
-              ...styles.imageContainer,
-              display: index === currentSlide ? 'block' : 'none', // Show only the current slide
-              backgroundImage: `url(${ngo.image})`
-            }}
-          >
-            <div style={styles.overlayContainer}>
-              <h3 style={styles.ngoName}>{ngo.name}</h3>
-              <p style={styles.ngoDescription}>{ngo.description}</p>
-            </div>
+    <div style={styles.card}>
+      <div style={styles.mainContainer}>
+        <div style={styles.leftContainer}>
+          <div style={styles.headingContainer}>
+            <h2 style={styles.heading}>Partnered NGOs</h2>
+            <p style={styles.description}>
+            We partner with a range of dedicated NGOs to facilitate the effective redistribution of surplus food to those in need. By collaborating with these organizations, we ensure that excess food reaches underserved communities, helping to combat food wastage and enhance support for those who are most vulnerable. Our NGO partners play a pivotal role in our mission to make a meaningful impact and drive positive change in communities across the region.
+            </p>
           </div>
-        ))}
+        </div>
+        <div style={styles.slideshowContainer}>
+          {ngoData.map((ngo, index) => (
+            <div
+              key={index}
+              style={{
+                ...styles.imageContainer,
+                display: index === currentSlide ? 'block' : 'none', // Show only the current slide
+                backgroundImage: `url(${ngo.image})`,
+              }}
+            >
+              <div style={styles.overlayContainer}>
+                <h3 style={styles.ngoName}>{ngo.name}</h3>
+                <p style={styles.ngoDescription}>{ngo.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
 const styles = {
+  card: {
+    width: '80%',
+    margin: '40px auto',
+    padding: '20px',
+    backgroundColor: '#F8F4E1',
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    
+    overflow: 'hidden',
+  },
   mainContainer: {
-    width: '100%',
-    height: '600px', // Adjust height if needed
     display: 'flex',
     justifyContent: 'space-between',
-    alignItems: 'center', // Center items vertically
-    padding: '20px',
+    alignItems: 'center',
+    height: '500px', // Adjust height if needed
     boxSizing: 'border-box',
-    borderRadius: '8px',
-    overflow: 'hidden', // Prevents overflow that might cause extra space
-    marginBottom: '0', // Ensure there's no bottom margin
   },
   leftContainer: {
     flex: '1',
@@ -86,13 +93,14 @@ const styles = {
     flex: '1',
     position: 'relative',
     height: '100%', // Ensure full height
+    
   },
   imageContainer: {
     width: '100%',
     height: '100%',
-    backgroundSize: 'cover', // Ensure the image covers the container
-    backgroundPosition: 'center', // Centers the image within the container
-    backgroundRepeat: 'no-repeat', // Prevents repeating of the image
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
     position: 'absolute',
     top: 0,
     left: 0,
@@ -103,12 +111,14 @@ const styles = {
     bottom: '20px',
     left: '50%',
     transform: 'translateX(-50%)',
-    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    backgroundColor: '#AF8F6F',
     color: 'white',
     padding: '10px 20px',
     borderRadius: '8px',
     textAlign: 'center',
     transition: 'transform 0.3s ease',
+    
+
   },
   ngoName: {
     fontSize: '18px',
@@ -118,6 +128,7 @@ const styles = {
   ngoDescription: {
     fontSize: '14px',
     lineHeight: '1.4',
+    color:"white"
   },
 };
 

@@ -80,6 +80,7 @@
   .faq .box {
     background-color: #fff;
     margin-bottom: 20px;
+    
   }
   .faq button {
     padding: 0;
@@ -91,13 +92,14 @@
   }
   .faq h2 {
     font-weight: 500;
+    color:#543310;
   }
   .faq p {
     padding: 20px;
   }
   .faq .accordion:hover {
-    background-color: #1eb2a6;
-    color: #fff;
+    background-color: #F8F4E1;
+    color: white;
   }
   
   /*--------------faq-------------*/

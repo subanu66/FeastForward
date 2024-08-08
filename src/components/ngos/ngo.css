@@ -67,12 +67,17 @@
   }
   /*-------------online---------*/
  /* Ensure container has padding and border-radius */
+ .firsttitle1{
+  background-color: #F8F4E1;
+  margin-top: -39px;
+ }
+ 
 .online {
   padding: 50px;
-  background-color: #f8f8f8;
   display: flex;
   flex-direction: column; /* Ensure vertical alignment */
   align-items: center;
+  
 }
 .topContent p{
   font-size: 19px;
@@ -81,9 +86,9 @@
   width: 90%;
   max-width: 1400px;
   height: 600px;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden; /* Ensures children do not overflow */
-  background-color: #F8F4E1;
+  background-color: white;
   display: flex;
   flex-direction: row;
 }
@@ -133,19 +138,19 @@
 
 .bullett.active {
   opacity: 1;
-  background-color: #543310; /* Active bullet color */
+  background-color: white; /* Active bullet color */
 }
 .firsttile{
   margin-bottom: 20px;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   color: black;
 }
 .sectionTitle1 {
-  margin-bottom: 20px;
+  margin-bottom: -15px;
   text-align: center;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: bold;
   color: black;
 }
@@ -162,17 +167,24 @@
 }
 
 .donationBtn:hover {
-  background-color: #74512D;
-  color: #F8F4E1;
+  background-color: #F8F4E1;
+  color: #543310;
 }
 
   /*-------------online---------*/
   @media screen and (max-width: 768px) {
   }
 /* new HAbout */
+.aboutSection h2{
+font-size: 25px;
+}
+.aboutSection h1{
+font-size: 35px;
+}
   .aboutSection {
     /* background-image: url('https://assets-global.website-files.com/61766c42e8e50c99a04fbd4b/6179a06ffccb52cde6770aa6_shutterstock_1767213716.jpeg'); */
     background-size: cover;
+    background-color: #F8F4E1;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
@@ -187,7 +199,6 @@
   .aboutSection h2{
     margin-bottom: 30px;
     text-align: center;
-    font-size: 30px;
     font-weight: bold;
     color: black;
   }
@@ -229,21 +240,23 @@
     align-items: center;
     text-align: center;
     margin-right: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
+    background-color: white;
 
   }
 
   .leftContainer p {
     padding: 10px;
     max-width: 80%;
-    font-size: 20px;
+    font-size: 19px;
+    margin-top: 14px;
   } 
 
   /* Updated .exploreBtn styles */
 .exploreBtn {
   padding: 15px 30px; /* Increase padding for a larger button */
   font-size: 18px; /* Adjust font size */
-  color: #F8F4E1;
+  color: #F8F4E1 ;
   background-color: #543310;
   border: none;
   border-radius: 5px;
@@ -254,8 +267,8 @@
 }
 
 .exploreBtn:hover {
-  background-color: #74512D;
-  color: #F8F4E1;
+  background-color: #F8F4E1;
+  color: #74512D;
 }
 
   .rightContainer {
@@ -263,7 +276,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    border-radius: 20px;
+    border-radius: 10px;
     padding-bottom: 30px;
     overflow: hidden;
   }
@@ -291,7 +304,7 @@
   
   .bullet.active {
     opacity: 1;
-    background-color: #543310; /* Active bullet color */
+    background-color: white; /* Active bullet color */
   }
 
   .imageSlide {

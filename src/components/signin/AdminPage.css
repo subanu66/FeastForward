@@ -104,6 +104,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   }
   
   .admin-container {
@@ -163,8 +164,11 @@
     right: 10px;
     transform: translateY(-50%);
     cursor: pointer;
+
   }
-  
+  .password-toggle {
+    margin-top: 2.5px;
+  }
   .login-options {
     width: 100%;
     display: flex;

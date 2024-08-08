@@ -1,9 +1,9 @@
 .login-page {
     height: 100vh;
-    /* background: url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxf-lKbQEmKBXqIyQZaZ3dddPa-Sz6hadtuKH32-fWt3MRUTPA') no-repeat center center/cover; */
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   }
   
   
@@ -14,6 +14,7 @@
     background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     overflow: hidden;
+    margin: 0px ;
   }
   .login-left{
     width:50%;
@@ -25,39 +26,46 @@
   }
   
   .login-right {
-    padding: 30px;
+    padding: 20px;
     width: 80%;
     display: flex;
     flex:2;
     flex-direction: column;
     align-items: center;
     margin-right: 50px;
+    
   }
   
   .login-right h1 {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    margin-right: -30px;
+    margin-top: 40px;
     font-size: 24px;
     color: #333;
   }
   
   .login-right p {
-    margin-bottom: 20px;
-    margin-right:9
+    margin-bottom: -20px;
+    margin-right:60px
     0px;
+    /* margin-top: 40px; */
     font-size: 14px;
     color: #555;
   }
   
   .login-fields {
     width: 100%;
-    margin-bottom: 20px;
+    /* margin-bottom: 10px; */
+    margin-top: 60px;
   }
   
   .input-container {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: -15px;
   }
-  
+  input[type="email"], input[type="password"], input[type="text"]{
+    margin-top:10px;
+  }
   input[type="email"],
   input[type="password"],
   input[type="text"] {
@@ -71,10 +79,14 @@
   
   .password-toggle {
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 10px;
+    margin-bottom: 30px;
     transform: translateY(-50%);
     cursor: pointer;
+  }
+  .password-toggle {
+    margin-top: -10px;
   }
   
   .login-options {
@@ -83,7 +95,9 @@
     justify-content: space-between;
     margin-bottom: 20px;
   }
-  
+  /* form{
+    margin-bottom: 60px;
+  } */
   .signin-button {
     width: 100%;
     padding: 10px;
@@ -117,7 +131,6 @@
     align-items: center;
     margin: 20px 0;
   }
-  
   .divider hr {
     flex: 1;
     border: none;
@@ -136,7 +149,9 @@
     justify-content: space-around;
     width: 100%;
   }
-  
+  .social{
+    margin-left: 30px;
+  }
   .social .icon {
     margin-right: 22px;
     background-color:#543310;

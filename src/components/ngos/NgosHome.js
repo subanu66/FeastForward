@@ -6,7 +6,7 @@ import PartneredNGOs from "./section2/PartneredNGOs"
 import NgoRegistration from "./section2/NgoRegistration"
 const NgosHome = () => {
   const heading = "NGOS";
-  const description = "Learn more about our mission and the team behind it.";
+  const description = "Food Bridge links NGOs with surplus food, simplifying the process of receiving and distributing it to those in need. Join us to efficiently manage food resources and make a difference in your community.";
   const timelineItems = [
     { title: 'How It Works'},
     { title: 'Benefits For NGOS'},
