@@ -19,8 +19,10 @@ import SignUpNgo from "./components/register/signup/SignUpNgo"
 import SignUpDonor from "./components/register/signup/SignUpDonor"
 import Body from "./components/home/body/Body"
 import Hregister from "./components/home/Hregister"
-import Welcome from "./components/Welcome"
-import AdminSide from "./components/AdminSide"
+import Navbar from "./components/admin/Navbar"
+import Dashboard from "./components/admin/Dashboard"
+
+
 
 function App() {
   return (
@@ -33,9 +35,9 @@ function App() {
         <Route path="/signupngo" element={<SignUpNgo />} />
         <Route path="/signupdonor" element={<SignUpDonor />} />
         <Route exact path='/register1' element={<Hregister />} />
-        <Route exact path='/adminside' element={<AdminSide />} />
-        
-
+        <Route exact path='/nav' element={<Navbar/>}/>
+        <Route exact path='/das' element={<Dashboard/>}/>
+      
         <Route path="*" element={
             <>
               <Header />
@@ -48,9 +50,7 @@ function App() {
                 <Route exact path='/contact' element={<Contact />} />
                 <Route exact path='/work' element={<Work />} />
                 <Route exact path='/body' element={<Body />} />
-                <Route exact path='/welcome' element={<Welcome/>} />
                 <Route exact path='/back' element={<Back title="About Us" />} />
-                
               </Routes>
               <Footer />
             </>

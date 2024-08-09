@@ -276,8 +276,15 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+const PasswordErrorMessage = () => {
+  return (
+    <p style={{ color: 'red', fontSize: '0.8em' }}>
+      Password should have at least 8 characters
+    </p>
+  );
+};
 const SignUpDonor = () => {
-  const [donorName, setDonorName] = useState('');
+  const [ donorName, setDonorName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -286,9 +293,21 @@ const SignUpDonor = () => {
   const [address, setAddress] = useState('');
   const [phone, setPhone] = useState('');
   const [error, setError] = useState('');
+  const [passwordTouched, setPasswordTouched] = useState(false);
 
   const navigate = useNavigate();
 
+  
+  const clearForm = () => {
+    setDonorName("");
+    setEmail("");
+    setPassword({ value: "", isTouched: false });
+    setConfirmPassword("");
+    setOrganization("");
+    setDonationType("");
+    setAddress("");
+    setPhone("");
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
     
@@ -301,17 +320,17 @@ const SignUpDonor = () => {
     }
 
     const payload = {
-      donorName,
-      email,
-      password,
-      organization,
-      donationType,
-      address,
-      phone
+      name:donorName,
+      email:email,
+      password:password,
+      org_name:organization,
+      orgtype:donationType,
+      address:address,
+      phn:phone
     };
 
     try {
-      const response = await fetch('http://localhost:8080/api/donors/register', {
+      const response = await fetch('http://localhost:8080/api/donors/registerdonor', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -320,7 +339,9 @@ const SignUpDonor = () => {
       });
 
       if (response.ok) {
+        
         console.log('Donor registered successfully!');
+        alert("Account created!");
         navigate('/');
       } else {
         const data = await response.json();
@@ -416,11 +437,17 @@ const SignUpDonor = () => {
                 <input
                   type="password"
                   value={password}
-                  onChange={(e) => setPassword(e.target.value)}
+                  onChange={(e) => {
+                    setPassword(e.target.value);
+                    setPasswordTouched(true);
+                  }}
                   placeholder="Password"
                   style={styles.input}
                   required
                 />
+                   {passwordTouched && password.length < 8 && (
+                  <PasswordErrorMessage />
+                )}
               </div>
               <div style={styles.field}>
                 <label style={styles.label}>

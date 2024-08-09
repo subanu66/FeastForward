@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 
 const PasswordErrorMessage = () => {
   return (
@@ -20,6 +20,9 @@ function SignUpVolun() {
   const [confirmpassword, setConfirmpassword] = useState("");
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
+  const [error, setError] = useState('');
+
+  const navigate = useNavigate();
 
   const getIsFormValid = () => {
     return (
@@ -43,10 +46,40 @@ function SignUpVolun() {
     setPhone("");
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    alert("Account created!");
-    clearForm();
+    
+    const payload = {
+      name: name,
+      email: mailid,
+      gender:gender,
+      password: password.value, 
+      address,
+      phn: phone
+    };
+
+    try {
+      const response = await fetch('http://localhost:8080/api/volunteer/registervolunteer', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+      console.log(response);
+      if (response.ok) {
+        console.log('Volunteer registered successfully!');
+        alert("Account created!");
+        navigate("/");
+      } else {
+        const data = await response.json();
+        setError(data.message || 'Registration failed');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setError('An error occurred');
+    }
+  
   };
 
   return (
@@ -147,14 +180,13 @@ function SignUpVolun() {
                   style={styles.input}
                 />
               </div>
-              <Link to="/">
+              
               <button
                 type="submit"
-                disabled={!getIsFormValid()}
+                // disabled={!getIsFormValid()}
                 style={styles.button}>
                 Register
               </button> 
-              </Link>
             </div>
           </div>
         </fieldset>

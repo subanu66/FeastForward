@@ -1,0 +1,37 @@
+.all-users-list-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .user-category {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-category h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .user-list-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-list-item p {
+    margin: 5px 0;
+  }
+  
