@@ -1,0 +1,60 @@
+.donor-requests-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #C6FFDD, #FFD194);
+    border-radius: 12px; /* Optional: if you want rounded corners for the container */
+  }
+  
+  .donor-requests-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #543310;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .table-card {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .table-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .donor-requests-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .donor-requests-table th,
+  .donor-requests-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .donor-requests-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #543310;
+  }
+  
+  .donor-requests-table td {
+    background-color: #fff;
+    color: #555;
+  }
+  
+  .donor-requests-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  

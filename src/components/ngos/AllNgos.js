@@ -1,7 +1,9 @@
 // AllNgos.js
 import React, { useState, useEffect } from "react";
 import "./ngo.css";
-import Donate from "./Donate";
+import { Link } from "react-router-dom"
+
+
 
 const AllNgos = () => {
   const ngoImages = [
@@ -59,13 +61,14 @@ const AllNgos = () => {
                 Your support allows us to reach more communities and provide nutritious meals to individuals and families. Each donation covers costs like logistics and food safety, ensuring that surplus food reaches those who need it most.
               </p>
             </div>
-            <button className='donationBtn' onClick={handleOpenModal}>Donate Now</button>
+            <Link to="/home">
+            <button className='donationBtn'>Donate Now</button>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Modal Component */}
-      <Donate isOpen={isModalOpen} onClose={handleCloseModal} />
+     
       </div>
     </>
   );

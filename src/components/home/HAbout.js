@@ -40,7 +40,7 @@ const HAbout = () => {
 
 
             </p>
-            <Link to="/ngos1">
+            <Link to="/home">
               <button  className="exploreBtn">Explore</button>
             </Link>
           </div>
@@ -62,6 +62,7 @@ const HAbout = () => {
         </div>
       </section>
       <div className='spacer2'></div>
+
       <AllNgos/>
     </>
   )

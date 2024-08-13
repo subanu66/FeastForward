@@ -23,20 +23,35 @@ const About = () => {
   ];
   return (
     <>
+    <div className="col">
       <div className="about-pagea">
-        <Back backgroundImage='/images/bk1.jpg' 
+        
+        <Back 
+        // backgroundImage='/images/bk1.jpg'
+         backgroundGradient='linear-gradient(to right, #C6FFDD, #FFD194)'
         heading={heading}
         description={description}
         timelineItems={timelineItems}
         />
       </div>
+      <div className="swift"></div>
       <Mission />
+      <div className="swift"></div>
        <HowItWorks />
+      <div className="swift"></div>
       <WhyChooseUs />
+      <div className="swift"></div>
       <Impact />
+      <div className="swift"></div>
       <MeetTheTeam />
+      <div className="swift"></div>
       <GetInvolved />
+      <div className="swift"></div>
       <Vision />
+      <div className="swift"></div>
+
+      
+    </div>
     </>
   );
 }

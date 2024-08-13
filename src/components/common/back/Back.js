@@ -2,11 +2,12 @@ import React from "react"
 import { useLocation } from "react-router-dom"
 import "./Back.css"
 
-const Back = ({ backgroundImage, heading, description, timelineItems}) => {
+const Back = ({ backgroundGradient, backgroundImage, heading, description, timelineItems}) => {
   const location = useLocation()
 
   const sectionStyle = {
-    backgroundImage: `url(${backgroundImage})`  , // Update the path to your image
+    background: backgroundGradient || `url(${backgroundImage})`,
+    // backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '100vh', // Adjust the height as needed

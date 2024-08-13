@@ -1,5 +1,7 @@
 .padding{
-background-color:#F8F4E1;
+/* background-color:#F8F4E1; */
+background: linear-gradient(to right,#C6FFDD, #FFD194);
+
 }
 .heading1 {
   margin-bottom: 30px;

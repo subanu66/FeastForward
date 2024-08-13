@@ -4,13 +4,24 @@ import "./contact.css";
 
 const Contact = () => {
   const imageUrl = '/images/contact.jpg'; // Replace with your image path
-  const heading = "About Us";
+  const heading = "Contact";
+  const description="At SurplusShare, we're dedicated to connecting surplus food with those in need, making a tangible impact in our communities. "
+  const timelineItems = [
+    { title: 'Email: support@surplusshare.org' },
+    { title: 'Phone: +1-800-123-4567'},
+    { title: 'Address: 1234 Community Lane, Cityville, ST, 12345'},
+    
+  ]
+
   return (
     <>
     <div className="about-pagea">
-      <Back backgroundImage='/images/bk1.jpg'
-      heading={heading} />
+      <Back  backgroundGradient='linear-gradient(to right, #C6FFDD, #FFD194)'
+      heading={heading}
+      description={description}
+        timelineItems={timelineItems} />
       </div>
+      <div className="col"></div>
       <section className='contacts padding'>
         <div className='container shadow flexSB'>
           <div className='left row'>

@@ -18,16 +18,24 @@ const Register = () => {
   ];
   return (
     <>
-      <Back backgroundImage='/images/bk1.jpg' 
+    <div className="col">
+      <Back 
+      backgroundGradient='linear-gradient(to right, #C6FFDD, #FFD194)'
       heading={heading}
       description={description}
       timelineItems={timelineItems} />
+      <div className="swift"></div>
       <Intro/>
+      <div className="swift"></div>
       <ContributeOptions/>
-             <RegisterThree />
-      
-      
+      <div className="swift"></div>
+       <RegisterThree />
+       <div className="swift"></div>
       <Faq />
+      <div className="swift"></div>
+
+      </div>
+      
     </>
   )
 }

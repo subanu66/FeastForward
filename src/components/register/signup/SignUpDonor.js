@@ -342,7 +342,7 @@ const SignUpDonor = () => {
         
         console.log('Donor registered successfully!');
         alert("Account created!");
-        navigate('/');
+        navigate('/donormain');
       } else {
         const data = await response.json();
         setError(data.message || 'Registration failed');

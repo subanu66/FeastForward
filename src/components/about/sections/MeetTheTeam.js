@@ -7,12 +7,12 @@ const MeetTheTeam = () => {
     borderRadius: '10px',
     overflow: 'hidden',
     width:'90%',
-    marginLeft:'70px',
+    marginLeft:'75px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     backgroundColor: '#F8F4E1', 
     transform: isHovered ? 'scale(1.03)' : 'scale(1)',
     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-    margin: '20px',
+    // margin: '20px',
   };
 
   const imageStyle = {

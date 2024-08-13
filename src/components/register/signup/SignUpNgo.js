@@ -74,7 +74,7 @@
           if (response.ok) {
             console.log('NGO registered successfully!');
             alert("Account created!");
-            navigate("/");
+            navigate("/ngomain");
           } else {
             const data = await response.json();
             setError(data.message || 'Registration failed');

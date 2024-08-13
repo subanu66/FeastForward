@@ -1,0 +1,68 @@
+.open-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #C6FFDD, #FFD194);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .welcome-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    border-radius: 10px;
+    z-index: 1;
+    position: relative;
+    background: linear-gradient(to right, #C6FFDD, #FFD194);
+
+  }
+  
+  .get-started-button {
+    padding: 20px 50px;
+    background-color: #543310;
+    color: #F8F4E1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.5s ease, transform 0.2s ease;
+  }
+  
+  .get-started-button:hover {
+    background-color: #F8F4E1;
+    color: #543310;
+    transform: scale(1.05);
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .signup-button, .login-button {
+    padding: 15px 30px;
+    background-color: #543310;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width:40%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .signup-button:hover, .login-button:hover {
+    background-color: white;
+    color:#543310;
+    transform: scale(1.05);
+  }
+  
+  /* Optional: Make sure the "Get Started" button fades out */
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  

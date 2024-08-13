@@ -17,8 +17,6 @@ const Body = () => {
               food to those in need. Join us to turn excess into opportunity and
               make a difference in your community.
             </p>
-
-            
           </div>
         </div>
       </section>

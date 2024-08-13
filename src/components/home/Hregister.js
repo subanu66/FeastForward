@@ -55,6 +55,7 @@ const Hregister = () => {
           </div>
         </div>
       </section>
+      <div className="clo"></div>
     </>
   );
 };  

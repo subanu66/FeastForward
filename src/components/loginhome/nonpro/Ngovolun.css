@@ -1,0 +1,57 @@
+.containerk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #C6FFDD, #FFD194);
+    min-height: 100vh;
+  }
+  
+  .headingk {
+    font-size: 28px;
+    font-weight: bold;
+    color: #543310;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cardk {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cardk:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tablek {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tablek th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tablek th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #543310;
+  }
+  
+  .tablek td {
+    color: #555;
+  }
+  
+  .tablek tr:hover {
+    background-color: #f9f9f9;
+  }
+  

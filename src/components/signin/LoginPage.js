@@ -144,7 +144,7 @@ const LoginPage = () => {
         const data = await response.json();
         // Save user info to localStorage
         localStorage.setItem('user', JSON.stringify(data.user));
-        navigate("/"); // Redirect to home page after successful login
+        navigate("/ngomain"); // Redirect to home page after successful login
       } else {
         const data = await response.json();
         setError(data.message || 'Login failed');
