@@ -116,7 +116,7 @@ const NGOList = () => {
   useEffect(() => {
     const fetchNgos = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/users/NGOall');
+        const response = await fetch('http://localhost:3002/api/users/NGOall');
         const data = await response.json();
         setNgos(data);
       } catch (error) {

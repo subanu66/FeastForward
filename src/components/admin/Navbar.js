@@ -82,7 +82,7 @@ const Navbar = ({ onNavItemClick }) => {
       <VerticalNavbar isOpen={isOpen}>
         <NavItem onClick={() => handleNavItemClick('allUsers')}>All Users</NavItem>
         <NavItem onClick={() => handleNavItemClick('ngos')}>NGOs</NavItem>
-        <NavItem onClick={() => handleNavItemClick('foodDonors')}>Food Donors</NavItem>
+        <NavItem onClick={() => handleNavItemClick('donorss')}>Food Donors</NavItem>
         <NavItem onClick={() => handleNavItemClick('volunteers')}>Volunteers</NavItem>
         <NavItem onClick={() => handleNavItemClick('donations')}>Donations</NavItem>
       </VerticalNavbar>

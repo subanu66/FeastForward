@@ -1,0 +1,90 @@
+.donor-list-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .donor-list-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .search-filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .search-filter-container input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 70%;
+  }
+  
+  .search-filter-container select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 25%;
+  }
+  
+  .donor-list-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .donor-list-table th, .donor-list-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .donor-list-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .donor-list-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .donor-list-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .donor-list-table td {
+    position: relative;
+  }
+  
+  .donor-list-table button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .donor-list-table .edit-btn {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .donor-list-table .edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .donor-list-table .delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .donor-list-table .delete-btn:hover {
+    background-color: #c82333;
+  }
+  
