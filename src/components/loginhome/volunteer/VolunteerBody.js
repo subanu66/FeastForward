@@ -2,8 +2,8 @@ import React from 'react';
 
 const VolunteerBody = () => {
   // Retrieve user data from localStorage
-  const user = JSON.parse(localStorage.getItem('user'));
-  const userName = user ? user.name : 'Volunteer'; // Default to 'Volunteer' if no user data
+//   const user = JSON.parse(localStorage.getItem('user'));
+  const userName =  'Volunteer'; // Default to 'Volunteer' if no user data
 
   return (
     <div style={styles.containerv}>

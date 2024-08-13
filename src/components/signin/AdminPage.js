@@ -36,7 +36,7 @@ const AdminPage = () => {
             </label>
             <a href="/forgot-password">Forgot Password?</a>
           </div>
-          <Link to="/adminside"><button className="signin-button">Sign In</button></Link>
+          <Link to="/das"><button className="signin-button">Sign In</button></Link>
         </div>  
         <div className="admin-right">
           <img src="/images/sign/userlg1.jpeg" alt="Admin" />

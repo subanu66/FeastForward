@@ -19,7 +19,7 @@ const AllUsersList = () => {
 
     const fetchDonors = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/users/Donorall');
+        const response = await fetch('http://localhost:8080/api/donors/donorall');
         const data = await response.json();
         setDonors(data);
       } catch (error) {
@@ -29,7 +29,7 @@ const AllUsersList = () => {
 
     const fetchVolunteers = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/users/Volunteerall');
+        const response = await fetch('http://localhost:8080/api/volunteer/volunall');
         const data = await response.json();
         setVolunteers(data);
       } catch (error) {

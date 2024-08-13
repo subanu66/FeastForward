@@ -13,7 +13,7 @@ const Body = () => {
             <h1>
             <Heading title="TRANSFORMING SURPLUS INTO SUSTENANCE" /></h1>
             <p>
-              FeastForward bridges event organizers and NGOs to deliver surplus
+              SurplusShare bridges event organizers and NGOs to deliver surplus
               food to those in need. Join us to turn excess into opportunity and
               make a difference in your community.
             </p>

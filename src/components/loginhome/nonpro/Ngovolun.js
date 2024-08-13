@@ -20,7 +20,7 @@ const Ngovolun = () => {
 
   return (
     <div className="containerk">
-      <h2 className="headingk">Registered Volunteers</h2>
+      <h2 className="headingk">REGISTERED VOLUNTEERS</h2>
       <div className="cardk">
         <table className="tablek">
           <thead>

@@ -4,6 +4,8 @@ import NGOList from './NGOList';
 import DonorList from './DonorList';
 import AllUsersList from './AllUserList';
 import Donations from './Donations';
+import VolunteerList from './VolunteerList';
+import DashboardMain from './DashboardMain';
 
 const Dashboard = () => {
   const [currentSection, setCurrentSection] = useState(''); // State to track the current section
@@ -20,6 +22,9 @@ const Dashboard = () => {
         {currentSection === 'allUsers' && <AllUsersList/>}
         {currentSection === 'donations' && <Donations/>}
         {currentSection === 'donorss' && <DonorList />} 
+        {currentSection === 'voluns' && <VolunteerList />} 
+        {currentSection === 'dash' && <DashboardMain />} 
+
 
       </div>
     </div>

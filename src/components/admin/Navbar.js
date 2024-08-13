@@ -1,17 +1,32 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+// import profileIcon from '../images/man.png'; 
+// import notificationIcon from './images/bell.jpg';
+// import settingsIcon from './images/sett.png'; 
 
 const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background-color: #333;
+  background-color: #543310;
   color: white;
   padding: 0 20px;
   position: fixed;
   width: 100%;
   z-index: 1000;
+`;
+
+const IconsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 15px;
+`;
+
+const Icon = styled.img`
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
 `;
 
 const HamburgerMenu = styled.div`
@@ -35,7 +50,8 @@ const VerticalNavbar = styled.div`
   left: ${({ isOpen }) => (isOpen ? '0' : '-250px')};
   width: 250px;
   height: 100%;
-  background-color: #222;
+  background-color:#543310;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,18 +88,28 @@ const Navbar = ({ onNavItemClick }) => {
   return (
     <>
       <NavbarContainer>
+        
         <HamburgerMenu onClick={toggleMenu}>
           <div />
           <div />
           <div />
         </HamburgerMenu>
+        <div>
+        <input type="text" placeholder="search" style={{width:'300%',marginRight:'60px'}}></input>
+        </div>
+        <IconsContainer>
+          <Icon src="./images/bell.png" alt="Notifications" />
+          <Icon src="./images/gear.png" alt="Settings" />
+          <Icon src="./images/profile.png" alt="Profile" />
+        </IconsContainer>
       </NavbarContainer>
 
       <VerticalNavbar isOpen={isOpen}>
+        <NavItem onClick={() => handleNavItemClick('dash')}>Dashboard</NavItem>
         <NavItem onClick={() => handleNavItemClick('allUsers')}>All Users</NavItem>
         <NavItem onClick={() => handleNavItemClick('ngos')}>NGOs</NavItem>
         <NavItem onClick={() => handleNavItemClick('donorss')}>Food Donors</NavItem>
-        <NavItem onClick={() => handleNavItemClick('volunteers')}>Volunteers</NavItem>
+        <NavItem onClick={() => handleNavItemClick('voluns')}>Volunteers</NavItem>
         <NavItem onClick={() => handleNavItemClick('donations')}>Donations</NavItem>
       </VerticalNavbar>
     </>

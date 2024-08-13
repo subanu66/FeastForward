@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import './DonorList.css'; // Import the CSS file for styling
+import './DonorList.css'; // Import the CSS file
 
 const DonorList = () => {
   const [donors, setDonors] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [filterField, setFilterField] = useState('');
+  const [filterField, setFilterField] = useState(''); // Selected field to filter by
   const [editingDonor, setEditingDonor] = useState(null);
   const [updatedDetails, setUpdatedDetails] = useState({
     name: '',
     email: '',
+    password: '',
     org_name: '',
     orgtype: '',
     address: '',
@@ -18,7 +19,7 @@ const DonorList = () => {
   useEffect(() => {
     const fetchDonors = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/donors/alldonors');
+        const response = await fetch('http://localhost:8080/api/donors/donorall');
         const data = await response.json();
         setDonors(data);
       } catch (error) {
@@ -34,6 +35,7 @@ const DonorList = () => {
     setUpdatedDetails({
       name: donor.name,
       email: donor.email,
+      password: donor.password,
       org_name: donor.org_name,
       orgtype: donor.orgtype,
       address: donor.address,
@@ -43,7 +45,7 @@ const DonorList = () => {
 
   const handleUpdate = async (id) => {
     try {
-      const response = await fetch(`http://localhost:8080/api/donors/${id}`, {
+      const response = await fetch(`http://localhost:8080/api/donors/putd/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -65,7 +67,7 @@ const DonorList = () => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:8080/api/donors/${id}`, {
+      const response = await fetch(`http://localhost:8080/api/donors/delete/${id}`, {
         method: 'DELETE',
       });
 
@@ -88,65 +90,92 @@ const DonorList = () => {
 
   return (
     <div className="donor-list-container">
-      <h2>Registered Donors</h2>
-      <div className="search-filter-container">
-        <input
-          type="text"
-          placeholder="Search Donors..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
+      <h2 className="donor-list-title">Donors List</h2>
+
+      <div className="filter-container">
         <select
+          className="filter-select"
           value={filterField}
           onChange={(e) => setFilterField(e.target.value)}
         >
-          <option value="">Filter by</option>
+          <option value="">Select Field to Filter By</option>
           <option value="name">Name</option>
           <option value="email">Email</option>
           <option value="org_name">Organization Name</option>
-          <option value="orgtype">Donation Type</option>
+          <option value="orgtype">Organization Type</option>
           <option value="address">Address</option>
           <option value="phn">Phone Number</option>
         </select>
+
+        <input
+          type="text"
+          className="search-input"
+          placeholder={`Search by ${filterField ? filterField : 'any field'}`}
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
       </div>
-      <table className="donor-list-table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Organization Name</th>
-            <th>Donation Type</th>
-            <th>Address</th>
-            <th>Phone Number</th>
-            <th>Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredDonors.map((donor) => (
-            <tr key={donor.id}>
-              <td>{donor.name}</td>
-              <td>{donor.email}</td>
-              <td>{donor.org_name}</td>
-              <td>{donor.orgtype}</td>
-              <td>{donor.address}</td>
-              <td>{donor.phn}</td>
-              <td>
-                {editingDonor === donor.id ? (
-                  <>
-                    <button className="edit-btn" onClick={() => handleUpdate(donor.id)}>Save</button>
-                    <button className="delete-btn" onClick={() => setEditingDonor(null)}>Cancel</button>
-                  </>
-                ) : (
-                  <>
-                    <button className="edit-btn" onClick={() => handleEdit(donor)}>Edit</button>
-                    <button className="delete-btn" onClick={() => handleDelete(donor.id)}>Delete</button>
-                  </>
-                )}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+
+      <ul className="donor-list">
+        {filteredDonors.map((donor) => (
+          <li key={donor.id} className="donor-list-item">
+            {editingDonor === donor.id ? (
+              <div className="donor-details">
+                <input
+                  type="text"
+                  value={updatedDetails.name}
+                  onChange={(e) => setUpdatedDetails({ ...updatedDetails, name: e.target.value })}
+                />
+                <input
+                  type="email"
+                  value={updatedDetails.email}
+                  onChange={(e) => setUpdatedDetails({ ...updatedDetails, email: e.target.value })}
+                />
+                <input
+                  type="password"
+                  value={updatedDetails.password}
+                  onChange={(e) => setUpdatedDetails({ ...updatedDetails, password: e.target.value })}
+                />
+                <input
+                  type="text"
+                  value={updatedDetails.org_name}
+                  onChange={(e) => setUpdatedDetails({ ...updatedDetails, org_name: e.target.value })}
+                />
+                <input
+                  type="text"
+                  value={updatedDetails.orgtype}
+                  onChange={(e) => setUpdatedDetails({ ...updatedDetails, orgtype: e.target.value })}
+                />
+                <input
+                  type="text"
+                  value={updatedDetails.address}
+                  onChange={(e) => setUpdatedDetails({ ...updatedDetails, address: e.target.value })}
+                />
+                <input
+                  type="text"
+                  value={updatedDetails.phn}
+                  onChange={(e) => setUpdatedDetails({ ...updatedDetails, phn: e.target.value })}
+                />
+                <button onClick={() => handleUpdate(donor.id)}>Save</button>
+                <button onClick={() => setEditingDonor(null)}>Cancel</button>
+              </div>
+            ) : (
+              <div className="donor-details">
+                <p><strong>Name:</strong> {donor.name}</p>
+                <p><strong>Email:</strong> {donor.email}</p>
+                <p><strong>Organization Name:</strong> {donor.org_name}</p>
+                <p><strong>Organization Type:</strong> {donor.orgtype}</p>
+                <p><strong>Address:</strong> {donor.address}</p>
+                <p><strong>Phone:</strong> {donor.phn}</p>
+                <div className="donor-actions">
+                  <button className="edit-btn" onClick={() => handleEdit(donor)}>Edit</button>
+                  <button className="delete-btn" onClick={() => handleDelete(donor.id)}>Delete</button>
+                </div>
+              </div>
+            )}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

@@ -70,7 +70,7 @@ function SignUpVolun() {
       if (response.ok) {
         console.log('Volunteer registered successfully!');
         alert("Account created!");
-        navigate("/");
+        navigate("/volunmain");
       } else {
         const data = await response.json();
         setError(data.message || 'Registration failed');

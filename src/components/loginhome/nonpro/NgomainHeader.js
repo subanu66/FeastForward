@@ -12,20 +12,20 @@ const NgomainHeader = () => {
           <nav className='flexSB'>
             <ul className={click ? "mobilee-nav" : "flexSB "} onClick={() => setClick(false)}>
               <li>
-                <Link to='/home'>HOME</Link>
+                <Link to='/'>HOME</Link>
               </li>
              
               <li>
-                <Link to='/home'>DONORS</Link>
+                <Link to=''>DONORS</Link>
               </li>
               <li>
-                <Link to='/home'>VOLUNTEERS</Link>
+                <Link to=''>VOLUNTEERS</Link>
               </li>
               <li>
-                <Link to='/home'>SERVICES</Link>
+                <Link to=''>SERVICES</Link>
               </li>
               <li>
-                <Link to='/home'>CONTACT</Link>
+                <Link to=''>CONTACT</Link>
               </li>
             </ul>
             <div className="startt">

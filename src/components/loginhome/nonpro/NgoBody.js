@@ -26,7 +26,7 @@ const NgoBody = () => {
       backgroundSize: 'cover',
       background: 'linear-gradient(to right, #C6FFDD, #FFD194)',
       backgroundPosition: 'center',
-      height: '100vh',
+      height: '70vh',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'center',
@@ -37,7 +37,7 @@ const NgoBody = () => {
     profileContainer: {
       position: 'absolute',
       right: '20px',
-      top: '30%',
+      top: '45%',
       marginRight: '65%',    
       transform: 'translateY(-50%)',
     },
@@ -57,7 +57,7 @@ const NgoBody = () => {
       fontSize: '36px',
       color: '#543310',
     //   textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
-      marginTop: '-250px',
+      marginTop: '-70px',
 
     },
     description: {

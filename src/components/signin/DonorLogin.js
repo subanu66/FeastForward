@@ -75,10 +75,10 @@ const DonorLogin = () => {
                   onChange={(e) => setPassword(e.target.value)}
                   required
                 />
-                <i
+                {/* <i
                   className={`fa ${passwordShown ? "fa-eye" : "fa-eye-slash"} password-toggle`}
                   onClick={togglePasswordVisibility}
-                ></i>
+                ></i> */}
               </div>
             </div>
 

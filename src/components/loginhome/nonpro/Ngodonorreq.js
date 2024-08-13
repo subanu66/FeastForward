@@ -14,7 +14,7 @@ const Ngodonorreq = () => {
 
   return (
     <div className="donor-requests-container">
-      <h1 className="donor-requests-heading">Donor Requests</h1>
+      <h1 className="donor-requests-heading">DONOR REQUESTS</h1>
       <div className="table-card">
         <table className="donor-requests-table">
           <thead>

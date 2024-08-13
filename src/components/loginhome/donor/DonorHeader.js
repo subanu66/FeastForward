@@ -12,17 +12,17 @@ const DonorHeader = () => {
           <nav className='flexSB'>
             <ul className={click ? "mobilee-nav" : "flexSB "} onClick={() => setClick(false)}>
               <li>
-                <Link to='/home'>HOME</Link>
+                <Link to='/'>HOME</Link>
               </li>
              
               <li>
-                <Link to='/home'>DONATION REQUEST</Link>
+                <Link to=''>DONATION REQUEST</Link>
               </li>
               <li>
-                <Link to='/home'>SERVICES</Link>
+                <Link to=''>SERVICES</Link>
               </li>
               <li>
-                <Link to='/home'>CONTACT</Link>
+                <Link to=''>CONTACT</Link>
               </li>
             </ul>
             <div className="startt">
